@@ -1,0 +1,16 @@
+{
+  "name": "yes-or-no-oracle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Persian yes-or-no oracle with automated tests",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/unit/*.test.js",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:e2e",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": { "@playwright/test": "^1.56.0" }
+}
