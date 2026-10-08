@@ -64,7 +64,7 @@ The Gherkin file is a specification. It does not have a Cucumber runner or step 
 npm run build
 ```
 
-The static output is written to `dist/`. Asset URLs currently assume hosting at the domain root. For GitHub Pages under a repository path, use relative asset and home links before deployment.
+The static output is written to `dist/`. Relative asset and home links support both a GitHub Pages repository URL and a custom domain. GitHub Actions publishes dist/ after the test suite passes on main.
 
 Google Fonts provides the font; system fonts are used if it cannot load. Questions and results are not stored. Each draw is independent, so the same answer can appear several times in a row.
 
